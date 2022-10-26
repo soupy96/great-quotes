@@ -7,19 +7,6 @@ import useHttp from '../hooks/use-http';
 import { getSingleQuote } from '../lib/api';
 import LoadingSpinner from '../components/UI/LoadingSpinner';
 
-const DUMMY_QUOTES = [
-  {
-    id: 'q1',
-    author: 'Michael',
-    text: 'Learning React is fun!',
-  },
-  {
-    id: 'q2',
-    author: 'Robyn',
-    text: 'Learning React is great!',
-  },
-];
-
 const SingleQuotes = () => {
   const match = useRouteMatch();
   const params = useParams();
